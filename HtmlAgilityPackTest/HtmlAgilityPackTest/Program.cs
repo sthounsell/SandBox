@@ -88,7 +88,15 @@ namespace HtmlAgilityPackTest
             loginRequest += String.Format("&{0}={1}&", "txtUserName", "STLGroup");
 
             Console.Write("Please enter the password: ");
-            var password = Console.ReadLine();
+            var password = "";
+            while (true)
+            {
+                var key = Console.ReadKey(true);
+                if (key.Key == ConsoleKey.Enter)
+                    break;
+                password += key.KeyChar;
+            }
+            Console.WriteLine();
             loginRequest += String.Format("{0}={1}&", "txtPassword", password);
             loginRequest += String.Format("{0}={1}&", "imgbtnLogin.x", "0");
             loginRequest += String.Format("{0}={1}", "imgbtnLogin.y", "0");
