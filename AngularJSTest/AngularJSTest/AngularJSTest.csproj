@@ -83,6 +83,7 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\controllers\controller.js" />
+    <Content Include="app\services\service.js" />
     <Content Include="index.html" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />

@@ -1,3 +1,4 @@
 ﻿var app = angular.module('testApp', [
-    'testApp.controllers'
+    'testApp.controllers',
+    'testApp.services'
 ]);
