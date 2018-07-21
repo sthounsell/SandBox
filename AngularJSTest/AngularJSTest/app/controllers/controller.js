@@ -4,4 +4,8 @@
             $scope.Message = 'Hello World!';
 
             $scope.serviceResult = testService.test();
+
+            testService.callApi().then(function (response) {
+                $scope.apiResult = response.data;
+            });
         }]);
