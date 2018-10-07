@@ -1,0 +1,24 @@
+﻿<md-content>
+    <div ng-controller="testController">
+        <h2>{{Message}}<br /></h2>
+        <h2>{{serviceResult}}<br /></h2>
+        <h2>{{apiResult}}<br /></h2>
+    </div>
+    <md-button class="md-raised md-primary">Test Button</md-button>
+
+    <md-card class="min-height-250" ng-class="{'fadeIn animated' : true}">
+        <md-card-content>
+            <h2 class="md-title">Demo</h2>
+            <p>Click continue for next slide.</p>
+
+            <md-select placeholder="Select an option" ng-model="someVal">
+                <md-option value="1">One</md-option>
+                <md-option value="2">Two</md-option>
+            </md-select>
+
+            <div class="md-actions" layout="row" layout-align="end center">
+                <md-button class="md-accent md-raised" ng-disabled="!someVal" ng-click="show = false">continue</md-button>
+            </div>
+        </md-card-content>
+    </md-card>
+</md-content>
