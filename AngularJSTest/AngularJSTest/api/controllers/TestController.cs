@@ -6,9 +6,9 @@ namespace AngularJSTest.api.controllers
     public class TestController : ApiController
     {
         // GET api/<controller>
-        public IEnumerable<string> Get()
+        public IHttpActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(new string[] { "value1", "value2" });
         }
 
         // GET api/<controller>/5

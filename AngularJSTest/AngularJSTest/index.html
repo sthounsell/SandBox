@@ -1,18 +1,15 @@
 ﻿<!DOCTYPE html>
-<html ng-app="testApp">
+<html>
 <head>
     <meta charset="utf-8" />
     <title>AngularJs Sample</title>
-    <script src="Scripts/angular.min.js"></script>
-    <script src="app/app.js"></script>
-    <script src="app/controllers/controller.js"></script>
-    <script src="app/services/service.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.7/angular-material.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css" />
+    
+    <script data-main="app/main" src="Scripts/require.js"></script>
 </head>
 <body>
-    <div ng-controller="testController">
-        <h2>{{Message}}<br /></h2>
-        <h2>{{serviceResult}}<br /></h2>
-        <h2>{{apiResult}}<br /></h2>
-    </div>
+    Test
+    <controller></controller>
 </body>
 </html>
