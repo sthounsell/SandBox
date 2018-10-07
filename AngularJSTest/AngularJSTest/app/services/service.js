@@ -1,15 +1,23 @@
-﻿angular.module('testApp.services', []).
-    factory('testService', function ($http) {
-        var testService = {};
-        var urlBase = '/api/test';
+﻿define([
+    'angular'
+], function (testApp) {
+    'use strict';
 
-        testService.test = function () {
-            return 'test value';
-        };
+    console.log('Test from service.js');
 
-        testService.callApi = function () {
-            return $http.get(urlBase);
-        };
+    //function testService($http) {
+    //    var testService = {};
+    //    var urlBase = '/api/test';
 
-        return testService;
-    });
+    //    testService.callApi = function () {
+    //        //return $http.get(urlBase);
+    //    };
+    //};
+
+    function testService() {
+        return 'test';
+    }
+
+    //return testService;
+    return testService;
+});

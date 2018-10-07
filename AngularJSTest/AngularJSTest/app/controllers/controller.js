@@ -1,11 +1,20 @@
-﻿angular.module('testApp.controllers', []).
-    controller('testController', ['$scope', 'testService',
-        function ($scope, testService) {
-            $scope.Message = 'Hello World!';
+﻿define([
+    'angular',
+    'app',
+    'services/service'
+], function (angular, app) {
+    'use strict';
 
-            $scope.serviceResult = testService.test();
 
-            testService.callApi().then(function (response) {
-                $scope.apiResult = response.data;
-            });
-        }]);
+    app.controller('testController', testController)
+
+    function testController ($scope) {
+        $scope.Message = 'Hello World!';
+
+        //testService.callApi().then(function (response) {
+        //    $scope.apiResult = response.data;
+        //});
+    };
+
+    return testController;
+});
