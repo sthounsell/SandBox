@@ -21,6 +21,8 @@
 require([
     'app'
 ], function () {
+    'use strict';
+
     console.log('Before bootstrap');
     angular.bootstrap(document, ['testApp']);
     console.log('After bootstrap');
