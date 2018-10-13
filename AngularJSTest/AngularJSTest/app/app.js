@@ -1,15 +1,19 @@
 ﻿define([
     'config',
-    'controllers/controller',
-    'services/service'
+    'services/service',
+    'controllers/controller'
 ],
-    function (config, controller, service) {
+    function (config, service, controller) {
+        'use strict';
+
         var app = angular.module('testApp', [
             'ngMaterial',
-            'ngMessages'
+            'ngMessages',
+            'ngRoute'
         ]);
 
-        //app.config(config);
+        app.config(config);
         app.controller('testController', controller);
         app.factory('testService', service);
-    });
+    }
+);

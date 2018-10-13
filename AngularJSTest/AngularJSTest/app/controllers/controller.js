@@ -1,21 +1,19 @@
-﻿define([
-    'angular',
-    'app'
-], function (angular, app) {
+﻿define([], function () {
     'use strict';
 
     console.log('Test from controller');
-    //app.controller('testController', testController)
 
-    function testController ($scope) {
+    function testController ($scope, testService, $http) {
         $scope.Message = 'Hello World!';
 
-        //testService.callApi().then(function (response) {
-        //    $scope.apiResult = response.data;
-        //});
+        $scope.serviceResult = testService.serviceResult();
+
+        testService.callApi().then(function (result) {
+            $scope.apiResult = result.data;
+        });
     }
 
-    testController.$inject = ['$scope'];
+    testController.$inject = ['$scope', 'testService', '$http'];
 
     return testController;
 });

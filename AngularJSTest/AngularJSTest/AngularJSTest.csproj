@@ -81,6 +81,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\components\testComponent\test.html" />
+    <Content Include="app\components\testComponent\test.js" />
     <Content Include="app\config.js" />
     <Content Include="app\main.js" />
     <Content Include="app\views\body.html" />

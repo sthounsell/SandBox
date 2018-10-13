@@ -1,9 +1,13 @@
 ﻿<md-content>
-    <div ng-controller="testController">
-        <h2>{{Message}}<br /></h2>
-        <h2>{{serviceResult}}<br /></h2>
-        <h2>{{apiResult}}<br /></h2>
-    </div>
+    <h2>{{Message}}<br /></h2>
+    <h2>{{serviceResult}}<br /></h2>
+    <h2>API result:</h2>
+    <div ng-repeat="item in apiResult">
+        {{item}}
+    </div><p>
+
+    <test-component></test-component>
+
     <md-button class="md-raised md-primary">Test Button</md-button>
 
     <md-card class="min-height-250" ng-class="{'fadeIn animated' : true}">
