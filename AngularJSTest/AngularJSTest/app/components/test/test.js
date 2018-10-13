@@ -1,15 +1,15 @@
-﻿define([
-    'angular'
-], function (angular) {
+﻿define([], function () {
     'use strict';
 
     angular.module('testApp')
         .component('testComponent', {
-            templateUrl: 'app/components/testComponent/test.html',
-            controller: ['$scope', testController]
+            templateUrl: 'app/components/test/test.html',
+            controller: ['$scope', 'testService', testController]
         });
 
     function testController($scope) {
+        'use strict';
+
         this.$onInit = () => {
             console.log('Hello from test component controller!');
         };

@@ -8,8 +8,7 @@
         'angular-material': '../Scripts/angular-material.min',
         'angular-route': '../Scripts/angular-route.min',
 
-        'ui-router': '../Scripts/angular-ui-router.min',
-        'oc-lazyload': '../Scripts/ocLazyLoad'
+        'ui-router': '../Scripts/angular-ui-router.min'
     },
     shim: {
         'angular': { exports: 'angular' },
@@ -19,13 +18,13 @@
         'angular-aria': { deps: ['angular'] },
         'angular-route': { deps: ['angular'] },
 
-        'ui-router': { deps: ['angular'] },
-        'oc-lazyLoad': { depds: ['angular']}
+        'ui-router': { deps: ['angular'] }
     }
 });
 
 require([
-    'app'
+    'app',
+    'components/home/home'
 ], function () {
     'use strict';
 

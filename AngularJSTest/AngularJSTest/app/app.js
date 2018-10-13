@@ -1,21 +1,18 @@
 ﻿define([
     'config',
-    'services/service',
-    'controllers/controller'
+    'services/service'
 ],
-    function (config, service, controller) {
+    function (config, service) {
         'use strict';
 
         var app = angular.module('testApp', [
             'ngMaterial',
             'ngMessages',
             'ngRoute',
-            'ui.router',
-            'oc.lazyLoad'
+            'ui.router'
         ]);
 
         app.config(config);
-        app.controller('testController', controller);
         app.factory('testService', service);
     }
 );

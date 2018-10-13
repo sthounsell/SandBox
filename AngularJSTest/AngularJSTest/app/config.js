@@ -1,24 +1,13 @@
 ﻿define([], function () {
-    function config($ocLazyLoadProvider, $stateProvider) {
-        $ocLazyLoadProvider.config({
-            debug: true
-        });
-
+    function config($stateProvider) {
         $stateProvider
-            .state('test', {
+            .state('home', {
                 url: '',
-                //templateUrl: 'app/views/body.html',
-                //controller: 'testController',
-                component: 'testComponent',
-                resolve: {
-                    load: function ($ocLazyLoad) {
-                        return $ocLazyLoad.load('app/components/testComponent/test.js');
-                    }
-                }
+                component: 'home'
             });
     }
 
-    config.$inject = ['$ocLazyLoadProvider', '$stateProvider'];
+    config.$inject = ['$stateProvider'];
 
     console.log('config');
 
