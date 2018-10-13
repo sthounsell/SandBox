@@ -3,7 +3,7 @@
 
     console.log('Test from controller');
 
-    function testController ($scope, testService, $http) {
+    function testController ($scope, testService) {
         $scope.Message = 'Hello World!';
 
         $scope.serviceResult = testService.serviceResult();
@@ -13,7 +13,7 @@
         });
     }
 
-    testController.$inject = ['$scope', 'testService', '$http'];
+    testController.$inject = ['$scope', 'testService'];
 
     return testController;
 });

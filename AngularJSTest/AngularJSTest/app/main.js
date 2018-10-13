@@ -6,7 +6,10 @@
         'angular-aria': '../Scripts/angular-aria.min',
         'angular-messages': '../Scripts/angular-messages.min',
         'angular-material': '../Scripts/angular-material.min',
-        'angular-route': '../Scripts/angular-route.min'
+        'angular-route': '../Scripts/angular-route.min',
+
+        'ui-router': '../Scripts/angular-ui-router.min',
+        'oc-lazyload': '../Scripts/ocLazyLoad'
     },
     shim: {
         'angular': { exports: 'angular' },
@@ -14,7 +17,10 @@
         'angular-messages': { deps: ['angular'] },
         'angular-animate': { deps: ['angular'] },
         'angular-aria': { deps: ['angular'] },
-        'angular-route': { deps: ['angular'] }
+        'angular-route': { deps: ['angular'] },
+
+        'ui-router': { deps: ['angular'] },
+        'oc-lazyLoad': { depds: ['angular']}
     }
 });
 

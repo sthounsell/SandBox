@@ -9,7 +9,9 @@
         var app = angular.module('testApp', [
             'ngMaterial',
             'ngMessages',
-            'ngRoute'
+            'ngRoute',
+            'ui.router',
+            'oc.lazyLoad'
         ]);
 
         app.config(config);
