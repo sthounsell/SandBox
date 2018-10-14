@@ -3,7 +3,7 @@
 ], function () {
     'use strict';
 
-    angular.module('testApp')
+    angular.module('testApp.home', ['testApp.test'])
         .component('home', {
             templateUrl: 'app/views/home.html',
             controller: ['$scope', 'testService', testController]

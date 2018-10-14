@@ -1,15 +1,15 @@
 ﻿define([
     'config',
-    'services/service'
+    'services/service',
+    'components/home/home'
 ],
     function (config, service) {
         'use strict';
 
         var app = angular.module('testApp', [
             'ngMaterial',
-            'ngMessages',
-            'ngRoute',
-            'ui.router'
+            'ui.router',
+            'testApp.home'
         ]);
 
         app.config(config);

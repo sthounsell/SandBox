@@ -23,8 +23,7 @@
 });
 
 require([
-    'app',
-    'components/home/home'
+    'app'
 ], function () {
     'use strict';
 

@@ -1,7 +1,7 @@
 ﻿define([], function () {
     'use strict';
 
-    angular.module('testApp')
+    angular.module('testApp.test', [])
         .component('testComponent', {
             templateUrl: 'app/components/test/test.html',
             controller: ['$scope', 'testService', testController]
