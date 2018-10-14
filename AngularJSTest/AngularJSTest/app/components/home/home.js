@@ -1,9 +1,13 @@
 ﻿define([
-    'components/test/test'
+    'components/test/test',
+    'components/shoppingList/shoppingList'
 ], function () {
     'use strict';
 
-    angular.module('testApp.home', ['testApp.test'])
+    angular.module('testApp.home', [
+        'testApp.test',
+        'testApp.shoppingList'
+    ])
         .component('home', {
             templateUrl: 'app/views/home.html',
             controller: ['$scope', 'testService', testController]
