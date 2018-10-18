@@ -28,7 +28,6 @@ namespace TestConsoleApp
                     services
                     .AddOptions()
                     .Configure<Settings>(context.Configuration.GetSection("Settings"));
-
                 })
                 .UseHostedService<HostedService>()
                 .UseConsoleLifetime();
