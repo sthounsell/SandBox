@@ -1,15 +1,15 @@
 ﻿define([], function () {
-
-    function config($routeProvider) {
-        $routeProvider
-            .when('/', {
-                templateUrl: 'index.html',
-                controller: 'testController'
-            })
-            .otherwise({
-                redirectTo: 'index.html'
+    function config($stateProvider) {
+        $stateProvider
+            .state('home', {
+                url: '',
+                component: 'home'
             });
     }
+
+    config.$inject = ['$stateProvider'];
+
+    console.log('config');
 
     return config;
 });

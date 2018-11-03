@@ -81,9 +81,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\components\home\home.js" />
+    <Content Include="app\components\shoppingList\shoppingList.html" />
+    <Content Include="app\components\shoppingList\shoppingList.js" />
+    <Content Include="app\components\test\test.html" />
+    <Content Include="app\components\test\test.js" />
     <Content Include="app\config.js" />
     <Content Include="app\main.js" />
-    <Content Include="app\views\body.html" />
+    <Content Include="app\views\home.html" />
     <Content Include="Content\angular-material.css" />
     <Content Include="Content\angular-material.layout-attributes.css" />
     <Content Include="Content\angular-material.layout-attributes.min.css" />
@@ -93,7 +98,6 @@
     <Content Include="Content\angular-material.min.css" />
     <Content Include="Global.asax" />
     <Content Include="app\app.js" />
-    <Content Include="app\controllers\controller.js" />
     <Content Include="app\services\service.js" />
     <Content Include="index.html" />
     <Content Include="node_modules\angular-animate\angular-animate.js" />
@@ -595,6 +599,8 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular-ui-router.js" />
+    <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\r.js" />
@@ -696,7 +702,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
     <VisualStudio>
